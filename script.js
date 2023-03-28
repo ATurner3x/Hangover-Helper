@@ -59,7 +59,7 @@ function searchResult(city){
     
     for (let index = 0; index < response.length; index++) {
       const city = response[index];
-      var cityCard = `<div class="card has-background-grey-dark" style="width:auto; height:auto; margin:8px;">
+      var cityCard = `<div class="card has-background-grey-dark" style="width:auto; height:fit-content; margin:8px;">
         <div class="card-content has-text-white-ter">
         <h5 class="card-header has-background-success-light has-text-black">${city.name}</h5>
         <p class="card-text">Address: ${city.address_1}</p>
@@ -127,7 +127,7 @@ function getAPIData(beer) {
       // This for loop will create the cards and set up what will be pulled from the API using "function getAPIData(beer)"
       for (let index = 0; index < response.length; index++) {
         const beer = response[index];
-        var beerCard = `<div class="card  has-background-grey-dark" style="width:15rem; height:auto; margin:8px;">
+        var beerCard = `<div class="card  has-background-grey-dark" style="width:15rem; height:fit-content; margin:8px;">
         <div class="card-content has-text-white-ter">
         <h5 class="card-header has-background-success-light has-text-black">${beer.name}</h5>
         <p class="card-text">${beer.abv} ABV%</p>
